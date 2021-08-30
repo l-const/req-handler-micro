@@ -17,11 +17,6 @@ app.get('/', (req, res) => {
 	res.redirect('/index')
 })
 
-function concaten(obj) {
-	let res = Object.entries(obj)
-	console.log(res)
-	return res.concat(':')
-}
 
 app.get('/index', (req, res) => {
 	const lang = req.get('accept-language')
